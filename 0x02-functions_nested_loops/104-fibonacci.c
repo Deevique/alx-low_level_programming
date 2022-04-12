@@ -19,7 +19,7 @@ int main(void)
 		j = k;
 		printf("%lu, ", k);
 	}
-	m = m % 1000;
+	m = i % 1000;
 	i = i / 1000;
 	n = j % 1000;
 	j = j / 1000;
