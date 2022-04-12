@@ -32,7 +32,7 @@ int main(void)
 		n = p;
 		i = j;
 		j = k;
-		if (p >= 1000)
+		if (p >= 100)
 			printf("%lu%lu", k, p);
 		else
 			printf("%lu0%lu", k, p);
