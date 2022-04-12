@@ -35,7 +35,7 @@ int main(void)
 		if (p >= 1000)
 			printf("%lu%lu", k, p);
 		else
-			print("%lu0%lu", k, p);
+			printf("%lu0%lu", k, p);
 		if (count != 98)
 			printf(", ");
 		count++;
