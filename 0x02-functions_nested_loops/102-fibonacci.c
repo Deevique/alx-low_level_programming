@@ -16,7 +16,7 @@ i = j;
 j = k;
 printf("%lu", k);
 if (count == 49)
-putcher('\n');
+putchar('\n');
 else
 {
 printf(",");
