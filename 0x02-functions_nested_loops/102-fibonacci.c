@@ -14,10 +14,12 @@ for (count = 0; count < 50; count++)
 k = i + j;
 i = j;
 j = k;
-printf("%lu", k)
-putcher('\n')
+printf("%lu", k);
+if (count == 49)
+putcher('\n');
 else
-{printf(",")
+{
+printf(",");
 }
 }
 return (0);
