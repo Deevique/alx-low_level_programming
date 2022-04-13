@@ -19,7 +19,7 @@ if (count == 49)
 putchar('\n');
 else
 {
-printf(",");
+printf(", ");
 }
 }
 return (0);
