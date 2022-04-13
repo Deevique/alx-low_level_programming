@@ -4,7 +4,7 @@
  * Return: Nothing
  */
 int main(void)
-
+{
 unsigned long count, i, j, k;
 
 i = 0;
@@ -23,4 +23,5 @@ printf(",");
 }
 }
 return (0);
+}
 
