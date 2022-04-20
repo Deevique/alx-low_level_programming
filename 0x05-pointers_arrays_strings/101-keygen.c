@@ -9,21 +9,23 @@
  */
 int main(void)
 {
-char seed[53] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-char password[22];
-int i, n, passw, complem;
+char a[100];
+int r, n, i;
 
-srand(time(0));
-
-for (i = 0; passw < 2772; i++)
+n = 0;
+i = 0;
+srand(time(NULL));
+while (n < 2645)
 {
-n = rand() % 10;
-password[i] = seed[n];
-passw += password[i];
+	r = rand() % 122;
+	if (r > 32)
+	{
+		a[i++] = r;
+	}
 }
-complem = 2772 - passw;
-password[i] = complem;
-printf("%s\n",  password);
+a[i++] = (2772 - n);
+a[i] = '\0';
+printf("%s", a);
+
 return (0);
-}
 
