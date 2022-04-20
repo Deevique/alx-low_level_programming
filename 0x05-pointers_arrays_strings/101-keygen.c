@@ -1,9 +1,8 @@
 #include "main.h"
-#include <stdlb.h>
+#include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 /**
- * my task
  */
 int main(void)
 {
