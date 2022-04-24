@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- * reverse_array - A function that reverses the content of an array of integers.
+ * reverse_array - A function that reverses the
+ * content of an array of integers.
  * @a: is a pointer type char
  * @n: is a pointer type char
  * Return: Always 0.
