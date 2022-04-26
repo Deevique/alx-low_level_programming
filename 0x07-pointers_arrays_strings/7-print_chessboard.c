@@ -1,3 +1,6 @@
+#include "main.h"
+#include <stdio.h>
+
 /**
  * main - check the code for ALX School students.
  *
@@ -18,4 +21,3 @@ int main(void)
     print_chessboard(board);
     return (0);
 }
-
