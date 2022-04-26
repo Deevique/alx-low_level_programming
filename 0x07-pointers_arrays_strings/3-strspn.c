@@ -1,6 +1,3 @@
-#include "main.h"
-#include <stdio.h>
-
 /**
  * _strchr - search str for occurance of c
  * @s: string searched
