@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * _strstr - Locating a substring
  *
