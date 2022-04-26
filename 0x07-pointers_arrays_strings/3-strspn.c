@@ -1,37 +1,25 @@
-#include "main.h"
 /**
- * _strchr - search str for occurance of c
- * @s: string searched
- * @c: target char
- * Return: s when c from where c is  found
- */
-char *_strchr(char *s, char c)
-{
-	while (*s)
-	{
-		if (*s == c)
-			return (s);
-		s++;
-	}
-	return (NULL);
-}
-/**
- * _strspn - search str for occurance of any in accept
- * @s: string searched
- * @accept: target string
- * Return: bytes from where accept is  found
- */
+* _strspn - Gets the length of a prefix substring.
+* @s: String where substring will look.
+* @accept: Substring of accepted chars.
+* Return: Length of occurrence.
+*/
 unsigned int _strspn(char *s, char *accept)
 {
-	int i;
+	unsigned int c = 0;
+	char *t = accept;
 
-	i = 0;
-
-	while (*s && _strchr(accept, *s))
+	while (*s++)
 	{
-
-		s++;
-		i++;
+		while (*accept++)
+			if (*(s - 1) == *(accept - 1))
+			{
+				c++;
+				break;
+			}
+		if (!(*--accept))
+			break;
+		accept = t;
 	}
-	return (i);
+	return (c);
 }
