@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * set_string - set string
  * @s: inut string
