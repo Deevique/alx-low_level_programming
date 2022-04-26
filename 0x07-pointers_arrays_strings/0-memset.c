@@ -1,5 +1,3 @@
-#include "main.h"
-#include <stdio.h>
 /**
  * _memset - fills memory with a constant byte
  * @s: is a pointer char type
