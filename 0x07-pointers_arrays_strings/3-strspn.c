@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strchr - search str for occurance of c
  * @s: string searched
