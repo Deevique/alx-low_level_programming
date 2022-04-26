@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * _memcpy - Copies content from source to destination
  * memory area
