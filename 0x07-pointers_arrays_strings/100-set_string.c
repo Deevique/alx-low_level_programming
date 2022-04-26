@@ -1,14 +1,14 @@
 /**
- * set_string - sets the value of a pointer to a char
+ * set_string - set string
+ * @s: inut string
+ * @to: character directions
  *
- * @s: Double pointer
- *
- * @to: Pointer
- *
- * Return: Void
+ * Description: sets the value of a pointer to a char
+ * Return: always 0
  */
 
 void set_string(char **s, char *to)
 {
 	*s = to;
 }
+
