@@ -1,27 +1,30 @@
-#include "main.h"
+#include <stdlib.h>
 
 /**
-* _calloc - allocate memory using malloc and initialize it to zero
-*@nmemb: number of elements
-*@size: size of the memory block to be allocated
-*
-*Return: poiner to the address of the memory block
-*/
+ * _calloc - allocates memory for an array, using malloc, and initializes to 0
+ * @nmemb: number of elements of the array
+ * @size: size of each element of the array
+ * Return: pointer to the allocated memory (SUCCESS) or
+ * NULL if @nmemb or @size is 0 (FAILURE) or
+ * NULL if insufficient memory was available (FAILURE)
+ */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *block;
 	unsigned int i;
+	char *ptr;
 
 	if (nmemb == 0 || size == 0)
-		return (NULL);
-	block = malloc(nmemb * size);
-	if (block != NULL)
-	{
-		for (i = 0; i < (nmemb * size); i++)
-			block[i] = 0;
-		return (block);
-	}
-	else
-		return (NULL);
+		return ('\0');
+
+	ptr = malloc(nmemb * size);
+
+	if (ptr == NULL)
+		return ('\0');
+
+	for (i = 0; i < nmemb * size; i++)
+		ptr[i] = 0;
+
+	return ((void *)ptr);
 }
 
