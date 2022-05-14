@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include 3-calc.h
+#include "3-calc.h"
 
 /**
  * get_op_func - Selects correct function to perform based on @s
