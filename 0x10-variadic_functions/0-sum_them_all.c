@@ -1,26 +1,28 @@
-#include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <stdarg.h>
 /**
- * sum_them_all - sum given inputs
- * @n: input params
- * Return: sum of numbers
+ *sum_them_all - returns a sum of all its parameters
+ *
+ *@n:no. of arguements
+ *
+ *Return:sum
+ *
  */
-
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list lst;
-	unsigned int sum = 0, i;
+	va_list va;
+	int sum = 0;
+	unsigned int i;
 
-	va_start(lst, n);
+	if (n == 0)
+		return (0);
+	va_start(va, n);
 	for (i = 0; i < n; i++)
 	{
-		int n = va_arg(lst, unsigned int);
-
-		sum += n;
+		sum += va_arg(va, int);
 	}
-	va_end(lst);
+	va_end(va);
 	return (sum);
 }
 
